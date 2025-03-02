@@ -89,7 +89,8 @@ buttons[1].addEventListener('click', function(){
     
 
 
-    newElement.innerText = "You have completed the task " + activity + "at " + currentTime + " " + timeExtention
+    newElement.innerText = "You have completed the task " + activity + "at " + currentTime + " " + timeExtention;
+    document.getElementById('activity-item').appendChild(newElement).style.marginBottom = "10px";
     document.getElementById('activity-item').appendChild(newElement);
 
 });
@@ -122,7 +123,8 @@ buttons[2].addEventListener('click', function(){
     
 
 
-    newElement.innerText = "You have completed the task " + activity + "at " + currentTime + " " + timeExtention
+    newElement.innerText = "You have completed the task " + activity + "at " + currentTime + " " + timeExtention;
+    document.getElementById('activity-item').appendChild(newElement).style.marginBottom = "10px";
     document.getElementById('activity-item').appendChild(newElement);
 
 });
@@ -155,7 +157,8 @@ buttons[3].addEventListener('click', function(){
     
 
 
-    newElement.innerText = "You have completed the task " + activity + "at " + currentTime + " " + timeExtention
+    newElement.innerText = "You have completed the task " + activity + "at " + currentTime + " " + timeExtention;
+    document.getElementById('activity-item').appendChild(newElement).style.marginBottom = "10px";
     document.getElementById('activity-item').appendChild(newElement);
 
 });
@@ -188,7 +191,8 @@ buttons[4].addEventListener('click', function(){
     
 
 
-    newElement.innerText = "You have completed the task " + activity + "at " + currentTime + " " + timeExtention
+    newElement.innerText = "You have completed the task " + activity + "at " + currentTime + " " + timeExtention;
+    document.getElementById('activity-item').appendChild(newElement).style.marginBottom = "10px";
     document.getElementById('activity-item').appendChild(newElement);
 
 });
@@ -221,7 +225,8 @@ buttons[5].addEventListener('click', function(){
     
 
 
-    newElement.innerText = "You have completed the task " + activity + "at " + currentTime + " " + timeExtention
+    newElement.innerText = "You have completed the task " + activity + "at " + currentTime + " " + timeExtention;
+    document.getElementById('activity-item').appendChild(newElement).style.marginBottom = "10px";
     document.getElementById('activity-item').appendChild(newElement);
 
 });
@@ -244,6 +249,6 @@ document.getElementById("something-new").addEventListener('click', function(){
 document.getElementById("nav-btn-2").addEventListener('click', function(){
   handleToggle("main-container", "flex");
   handleToggle("question-container", "none")
-  handleToggle("nav-btn-1", "block")
+  handleToggle("nav-btn-1", "flex")
   handleToggle("nav-btn-2", "none")
 });
