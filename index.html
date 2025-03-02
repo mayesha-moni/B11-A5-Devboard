@@ -25,7 +25,7 @@
                 </div>
                 <h2 class="logo-title text-[30px] font-thin">Dev<span class="font-bold">Board</span></h2>
             </div>
-            <div class="nav-item flex items-center gap-[20px]">
+            <div id="nav-btn-1" class="nav-item flex items-center gap-[20px]">
                 <div class="bg-[#F4F7FF] px-[10px] py-[5px] rounded-lg flex items-center">
                     <div>
                         <img src="assets/checkbox.png" alt="">
@@ -36,10 +36,13 @@
                     <img src="assets/theme-btn.png" alt="">
                 </div>
             </div>
+            <div id="nav-btn-2" class="hidden nav-item flex items-center gap-[20px]">
+                <button class=" cursor-pointer px-[15px] py-[10px] font-medium text-white rounded-xl bg-[#3752FD] hover:bg-[#bac3ff]">Back to Desk</button>
+            </div>
         </nav>
     </header>
     <main class="w-[90%] mx-auto my-[20px]">
-        <section class="main-container flex gap-[20px]">
+        <section id="main-container" class="main-container mb-[30px]  flex gap-[20px]">
             <div class="bg-white w-[140%] mx-auto rounded-xl flex flex-col justify-between">
                 <div class="p-[20px] items-center justify-evenly flex  gap-[10px] border-b-[2px] border-b-gray-100 border-dashed mb-[20px]">
                     <div class="px-[20px] py-[10px] flex gap-[10px] bg-[#F4F7FF] items-center rounded-xl h-[80px]">
@@ -51,14 +54,14 @@
                             
                         </div>
                     </div>
-                    <div class="bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-xl flex px-[20px] py-[10px] h-[80px] items-center w-[450px] gap-[10px]">
+                    <button id="something-new" class="cursor-pointer bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-xl flex px-[20px] py-[10px] h-[80px] items-center w-[450px] gap-[10px]">
                         <div>
                             <img class="w-[50px] " src="assets/board.png" alt="">
                         </div>
-                        <div class="text-white font-medium">
-                            <p class="text-[18px]">Discover Something <br>New Today!</p>
+                        <div  class="text-white font-medium cursor-pointer">
+                            <p class="text-[18px]">Discover Something New Today!</p>
                         </div>
-                    </div>
+                    </button>
                     <div class="px-[20px] py-[10px] flex gap-[10px] bg-[#F4F7FF] items-center rounded-xl h-[80px]">
                         <div class="rounded-full bg-white ">
                             <img class="  p-[10px]" src="assets/calender.png" alt="">
@@ -157,6 +160,39 @@
                 <div id="activity-item" class="px-[10px] py-[30px]">
 
                 </div>
+            </div>
+        </section>
+        <section id="question-container" class="question-container mb-[30px] hidden">
+            <h2 class="text-center font-bold mb-[30px] text-2xl justify-center">Blogs</h2>
+            <div>
+                <div class="ques mb-[20px] bg-white rounded-lg p-[20px] space-y-[10px]">
+                    <h1 class="font-bold text-lgj">Question-1: What are the different ways to select an element in the DOM?</h1>
+                    <hr class="text-gray-200">
+                    <p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet placeat perspiciatis magni. Quaerat ipsam explicabo facere blanditiis hic expedita ea consequuntur, iusto nemo dolorem esse eum voluptas architecto quasi. Magnam.</p>
+                </div>
+                <div class="ques mb-[20px] bg-white rounded-lg p-[20px] space-y-[10px]">
+                    <h1 class="font-bold text-lgj">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+                    <hr class="text-gray-200">
+                    <p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet placeat perspiciatis magni. Quaerat ipsam explicabo facere blanditiis hic expedita ea consequuntur, iusto nemo dolorem esse eum voluptas architecto quasi. Magnam.</p>
+                </div>
+                <div class="ques mb-[20px] bg-white rounded-lg p-[20px] space-y-[10px]">
+                    <h1 class="font-bold text-lgj">Question-3: What is event delegation in the DOM?</h1>
+                    <hr class="text-gray-200">
+                    <p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet placeat perspiciatis magni. Quaerat ipsam explicabo facere blanditiis hic expedita ea consequuntur, iusto nemo dolorem esse eum voluptas architecto quasi. Magnam.</p>
+                </div>
+                <div class="ques mb-[20px] bg-white rounded-lg p-[20px] space-y-[10px]">
+                    <h1 class="font-bold text-lgj">Question-4: What is event bubbling in the DOM?
+
+                    </h1>
+                    <hr class="text-gray-200">
+                    <p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet placeat perspiciatis magni. Quaerat ipsam explicabo facere blanditiis hic expedita ea consequuntur, iusto nemo dolorem esse eum voluptas architecto quasi. Magnam.</p>
+                </div>
+                <div class="ques mb-[20px] bg-white rounded-lg p-[20px] space-y-[10px]">
+                    <h1 class="font-bold text-lgj">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+                    <hr class="text-gray-200">
+                    <p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet placeat perspiciatis magni. Quaerat ipsam explicabo facere blanditiis hic expedita ea consequuntur, iusto nemo dolorem esse eum voluptas architecto quasi. Magnam.</p>
+                </div>
+                
             </div>
         </section>
     </main>

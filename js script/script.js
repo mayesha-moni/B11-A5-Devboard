@@ -229,3 +229,21 @@ buttons[5].addEventListener('click', function(){
 document.getElementById('clear-history').onclick = function() {
   document.getElementById('activity-item').innerHTML = '';  // Clears all content
 };
+
+function handleToggle(id, status){
+  document.getElementById(id).style.display = status;
+}
+
+document.getElementById("something-new").addEventListener('click', function(){
+  handleToggle("main-container", "none");
+  handleToggle("question-container", "block")
+  handleToggle("nav-btn-1", "none")
+  handleToggle("nav-btn-2", "block")
+});
+
+document.getElementById("nav-btn-2").addEventListener('click', function(){
+  handleToggle("main-container", "flex");
+  handleToggle("question-container", "none")
+  handleToggle("nav-btn-1", "block")
+  handleToggle("nav-btn-2", "none")
+});
