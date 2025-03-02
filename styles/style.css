@@ -2,3 +2,6 @@ body{
     background-color: #F4F7FF;
 }
 
+button:disabled{
+    background-color: #bac3ff;
+}
