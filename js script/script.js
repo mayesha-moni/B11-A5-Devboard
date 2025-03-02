@@ -21,6 +21,23 @@ var buttons = document.getElementsByClassName('task-btn');
 
         document.getElementById("completed-task").innerText = newCompletedTask;
         document.getElementById("assigned-task").innerText = newAssignedTask;
+
+       
        
       });
     }
+
+buttons[0].addEventListener('click', function(){
+    var activity = document.getElementsByClassName("card-title")[0].innerText;
+    console.log(activity);
+
+    var newElement = document.createElement('p');
+    newElement.style.backgroundColor = "#F4F7FF";
+    newElement.style.color = "#000000";
+    newElement.style.padding = "10px"
+    newElement.style.borderRadius = "18px"
+    newElement.style.fontSize = "14px"
+
+    newElement.innerText = "You have completed the task " + activity
+    document.getElementById('activity-item').appendChild(newElement);
+});
