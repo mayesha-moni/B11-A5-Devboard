@@ -57,6 +57,171 @@ buttons[0].addEventListener('click', function(){
 
 
     newElement.innerText = "You have completed the task " + activity + "at " + currentTime + " " + timeExtention
+    document.getElementById('activity-item').appendChild(newElement).style.marginBottom = "10px";
+
+});
+buttons[1].addEventListener('click', function(){
+    var activity = document.getElementsByClassName("card-title")[1].innerText;
+    console.log(activity);
+
+    var newElement = document.createElement('p');
+    newElement.style.backgroundColor = "#F4F7FF";
+    newElement.style.color = "#000000";
+    newElement.style.padding = "10px"
+    newElement.style.borderRadius = "18px"
+    newElement.style.fontSize = "14px"
+
+    const time = new Date();
+
+    const hours = time.getHours();
+    const mins = time.getMinutes();
+    const secs = time.getSeconds();
+
+    if(hours < 12){
+      var timeExtention = "AM";
+
+    }
+    else{
+      var timeExtention = "PM";
+    }
+
+    const currentTime = hours + ":" + mins + ":" + secs;
+    
+
+
+    newElement.innerText = "You have completed the task " + activity + "at " + currentTime + " " + timeExtention
+    document.getElementById('activity-item').appendChild(newElement);
+
+});
+buttons[2].addEventListener('click', function(){
+    var activity = document.getElementsByClassName("card-title")[2].innerText;
+    console.log(activity);
+
+    var newElement = document.createElement('p');
+    newElement.style.backgroundColor = "#F4F7FF";
+    newElement.style.color = "#000000";
+    newElement.style.padding = "10px"
+    newElement.style.borderRadius = "18px"
+    newElement.style.fontSize = "14px"
+
+    const time = new Date();
+
+    const hours = time.getHours();
+    const mins = time.getMinutes();
+    const secs = time.getSeconds();
+
+    if(hours < 12){
+      var timeExtention = "AM";
+
+    }
+    else{
+      var timeExtention = "PM";
+    }
+
+    const currentTime = hours + ":" + mins + ":" + secs;
+    
+
+
+    newElement.innerText = "You have completed the task " + activity + "at " + currentTime + " " + timeExtention
+    document.getElementById('activity-item').appendChild(newElement);
+
+});
+buttons[3].addEventListener('click', function(){
+    var activity = document.getElementsByClassName("card-title")[3].innerText;
+    console.log(activity);
+
+    var newElement = document.createElement('p');
+    newElement.style.backgroundColor = "#F4F7FF";
+    newElement.style.color = "#000000";
+    newElement.style.padding = "10px"
+    newElement.style.borderRadius = "18px"
+    newElement.style.fontSize = "14px"
+
+    const time = new Date();
+
+    const hours = time.getHours();
+    const mins = time.getMinutes();
+    const secs = time.getSeconds();
+
+    if(hours < 12){
+      var timeExtention = "AM";
+
+    }
+    else{
+      var timeExtention = "PM";
+    }
+
+    const currentTime = hours + ":" + mins + ":" + secs;
+    
+
+
+    newElement.innerText = "You have completed the task " + activity + "at " + currentTime + " " + timeExtention
+    document.getElementById('activity-item').appendChild(newElement);
+
+});
+buttons[4].addEventListener('click', function(){
+    var activity = document.getElementsByClassName("card-title")[4].innerText;
+    console.log(activity);
+
+    var newElement = document.createElement('p');
+    newElement.style.backgroundColor = "#F4F7FF";
+    newElement.style.color = "#000000";
+    newElement.style.padding = "10px"
+    newElement.style.borderRadius = "18px"
+    newElement.style.fontSize = "14px"
+
+    const time = new Date();
+
+    const hours = time.getHours();
+    const mins = time.getMinutes();
+    const secs = time.getSeconds();
+
+    if(hours < 12){
+      var timeExtention = "AM";
+
+    }
+    else{
+      var timeExtention = "PM";
+    }
+
+    const currentTime = hours + ":" + mins + ":" + secs;
+    
+
+
+    newElement.innerText = "You have completed the task " + activity + "at " + currentTime + " " + timeExtention
+    document.getElementById('activity-item').appendChild(newElement);
+
+});
+buttons[5].addEventListener('click', function(){
+    var activity = document.getElementsByClassName("card-title")[5].innerText;
+    console.log(activity);
+
+    var newElement = document.createElement('p');
+    newElement.style.backgroundColor = "#F4F7FF";
+    newElement.style.color = "#000000";
+    newElement.style.padding = "10px"
+    newElement.style.borderRadius = "18px"
+    newElement.style.fontSize = "14px"
+
+    const time = new Date();
+
+    const hours = time.getHours();
+    const mins = time.getMinutes();
+    const secs = time.getSeconds();
+
+    if(hours < 12){
+      var timeExtention = "AM";
+
+    }
+    else{
+      var timeExtention = "PM";
+    }
+
+    const currentTime = hours + ":" + mins + ":" + secs;
+    
+
+
+    newElement.innerText = "You have completed the task " + activity + "at " + currentTime + " " + timeExtention
     document.getElementById('activity-item').appendChild(newElement);
 
 });
