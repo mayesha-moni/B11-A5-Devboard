@@ -225,3 +225,7 @@ buttons[5].addEventListener('click', function(){
     document.getElementById('activity-item').appendChild(newElement);
 
 });
+
+document.getElementById('clear-history').onclick = function() {
+  document.getElementById('activity-item').innerHTML = '';  // Clears all content
+};
