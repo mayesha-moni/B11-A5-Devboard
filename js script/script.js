@@ -38,6 +38,25 @@ buttons[0].addEventListener('click', function(){
     newElement.style.borderRadius = "18px"
     newElement.style.fontSize = "14px"
 
-    newElement.innerText = "You have completed the task " + activity
+    const time = new Date();
+
+    const hours = time.getHours();
+    const mins = time.getMinutes();
+    const secs = time.getSeconds();
+
+    if(hours < 12){
+      var timeExtention = "AM";
+
+    }
+    else{
+      var timeExtention = "PM";
+    }
+
+    const currentTime = hours + ":" + mins + ":" + secs;
+    
+
+
+    newElement.innerText = "You have completed the task " + activity + "at " + currentTime + " " + timeExtention
     document.getElementById('activity-item').appendChild(newElement);
+
 });
